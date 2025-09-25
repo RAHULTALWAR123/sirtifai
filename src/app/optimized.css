@@ -1,0 +1,31 @@
+/* Minimal critical CSS for LCP optimization */
+
+/* Prevent layout shifts for hero images */
+.hero-section img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+  .hero-section img {
+    max-width: 100vw;
+    height: auto;
+  }
+}
+
+/* Desktop-specific optimizations */
+@media (min-width: 641px) {
+  .hero-section img {
+    max-width: 600px;
+    height: 500px;
+  }
+}
+
+/* Optimize text rendering */
+.hero-section h1 {
+  font-display: swap;
+  text-rendering: optimizeSpeed;
+}

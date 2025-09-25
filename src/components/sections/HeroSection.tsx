@@ -3,8 +3,7 @@
 import { Phone, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SPP_OPTIONS } from '../../constants/data';
-import { OptimizedImage } from '../ui/OptimizedImage';
-import { MobileOptimizedImage } from '../ui/MobileOptimizedImage';
+// Removed complex image optimizations that were causing performance issues
 import React from 'react';
 
 // ✅ Strongly typed motion components
@@ -40,21 +39,14 @@ export const HeroSection = () => {
       >
         <div className="w-full flex flex-col gap-6 sm:gap-10">
           <div className="relative w-[100%] sm:w-full">
-            <MotionDiv
+            <MotionImg
               className="absolute right-[10%] lg:right-[-1%] top-[12%] lg:top-[-8%] w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]"
+              src="/assets/star.png"
+              alt="Star"
               initial={{ opacity: 0, scale: 0, rotate: -180 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <OptimizedImage
-                src="/assets/star.png"
-                alt="Star"
-                width={30}
-                height={30}
-                priority={true}
-                className="w-full h-full"
-              />
-            </MotionDiv>
+            />
 
             <MotionH1
               className="text-[13vw] sm:text-[2.5rem] lg:text-[4rem] leading-12 sm:leading-tight font-semibold pt-10 sm:pt-16 lg:pt-0 font-open-sans text-black"
@@ -140,33 +132,28 @@ export const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        {/* Desktop Image */}
-        <MotionDiv
-          className="hidden sm:block"
+        <MotionImg
+          className="hidden sm:block object-contain max-w-[99%] sm:max-w-[600px]"
+          src="/assets/home/girl.png"
+          alt="Woman Holding Book"
+          loading="eager"
+          decoding="async"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          <OptimizedImage
-            src="/assets/home/girl.png"
-            alt="Woman Holding Book"
-            width={600}
-            height={500}
-            priority={true}
-            className="object-contain max-w-[99%] sm:max-w-[600px]"
-            sizes="(max-width: 640px) 100vw, 600px"
-          />
-        </MotionDiv>
+        />
 
-        {/* Mobile Image - This is likely the LCP element */}
-        <MobileOptimizedImage
+        {/* Mobile Image - Critical for LCP */}
+        <MotionImg
+          className="block sm:hidden object-contain max-w-[100%]"
           src="/assets/home/girl-book-home-img.png"
           alt="Woman Holding Book"
-          width={400}
-          height={400}
-          priority={true}
-          className="hero-image-container block sm:hidden"
-          sizes="100vw"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
         />
       </MotionDiv>
     </div>
