@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 // import { GeistMono } from "geist/font/mono"
 import "./globals.css"
+import { PerformanceMonitor } from "../components/PerformanceMonitor"
 
 export const metadata: Metadata = {
   title: "Sirtifai - Professional Certification & Training Platform",
@@ -26,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>{children}</body>
+      <body className={GeistSans.className}>
+        {children}
+        <PerformanceMonitor />
+      </body>
     </html>
   )
 }
