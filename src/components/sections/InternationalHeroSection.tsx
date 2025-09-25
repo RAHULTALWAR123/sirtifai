@@ -80,7 +80,7 @@ export const InternationalHeroSection = () => {
             {/* Main Large Image */}
             <div className="relative">
               <img
-                src="/assets/international/int1.png"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="International Career Opportunities"
                 className="w-full h-auto rounded-lg shadow-lg"
                 onError={(e) => {
@@ -119,7 +119,7 @@ export const InternationalHeroSection = () => {
             {/* Smaller Second Image - Overlapping the bottom */}
             <div className="absolute bottom-[50%] right-[-10%] sm:bottom-0 sm:right-0 w-60 sm:w-3/4 transform translate-y-1/4">
               <img
-                src="/assets/international/image.png"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Global Opportunities"
                 className="w-full h-auto rounded-lg shadow-lg  "
                 onError={(e) => {
