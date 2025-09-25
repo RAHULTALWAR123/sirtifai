@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "analyze": "ANALYZE=true next build",
-    "build:analyze": "npm run analyze"
+    "lint": "next lint"
   },
   "dependencies": {
     "@eslint/js": "latest",
@@ -77,12 +75,10 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript-eslint": "latest",
     "vaul": "^0.9.9",
-    "web-vitals": "^5.1.0",
     "zod": "3.25.67"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@next/bundle-analyzer": "^15.5.4",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.17",

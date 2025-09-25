@@ -3,7 +3,6 @@
 import { Phone, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SPP_OPTIONS } from '../../constants/data';
-// Removed complex image optimizations that were causing performance issues
 import React from 'react';
 
 // ✅ Strongly typed motion components
@@ -127,7 +126,7 @@ export const HeroSection = () => {
 
       {/* Right Side with Image */}
       <MotionDiv
-        className="hero-section relative flex justify-center items-center -mt-10 lg:mt-0 h-auto lg:h-[500px] w-full lg:w-auto"
+        className="relative flex justify-center items-center -mt-10 lg:mt-0 h-auto lg:h-[500px] w-full lg:w-auto"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
@@ -136,21 +135,16 @@ export const HeroSection = () => {
           className="hidden sm:block object-contain max-w-[99%] sm:max-w-[600px]"
           src="/assets/home/girl.png"
           alt="Woman Holding Book"
-          loading="eager"
-          decoding="async"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         />
 
-        {/* Mobile Image - Critical for LCP */}
+        {/* Mobile Image */}
         <MotionImg
           className="block sm:hidden object-contain max-w-[100%]"
           src="/assets/home/girl-book-home-img.png"
           alt="Woman Holding Book"
-          loading="eager"
-          decoding="async"
-          fetchPriority="high"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
