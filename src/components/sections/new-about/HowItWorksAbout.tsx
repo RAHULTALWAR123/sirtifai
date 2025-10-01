@@ -47,7 +47,7 @@ const HowItWorksAbout = () => {
   </div>
 
   {/* White Center Card */}
-  <div className="bg-white rounded-xl p-10 text-center mx-auto max-w-lg relative z-10">
+  <div className="bg-white sm:rounded-xl p-10 text-center mx-auto max-w-lg relative z-10">
     <ul className="text-gray-900 sm:text-lg text-sm space-y-3 font-medium">
       <li>Domain Knowledge — <span className="font-semibold">40%</span></li>
       <li>Practical Case Scenarios — <span className="font-semibold">30%</span></li>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Fail() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 pb-10">
       <h1 className="text-3xl sm:text-5xl text-[#FF6200] font-semibold mb-8 text-center">
         What if I Fail ?
       </h1>
