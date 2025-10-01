@@ -26,10 +26,10 @@ const FreeLancerWhat: React.FC = () => {
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-          What Is The Freelancer Programme?
+          What Is The PGCAP?
         </h2>
         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Sirtifai&apos;s Freelancer Programme is a structured platform for freelancers, freshers, and career restarters to earn verified income through real projects while gaining mentorship, legal protection, and long-term client access.
+          Sirtifai&apos;s PGCAP is a structured platform for freelancers, freshers, and career restarters to earn verified income through real projects while gaining mentorship, legal protection, and long-term client access.
         </p>
 
         {/* FIX: use responsive grid instead of flex-nowrap */}

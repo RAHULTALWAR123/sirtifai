@@ -157,7 +157,7 @@ const PricingInterface = () => {
             <div className="flex items-center justify-between mb-4">
               <div>
                 <h3 className="text-xl font-bold">
-                  Freelancer 
+                PGCAP
                    Package
                    </h3>
                 {/* <div className="text-2xl font-bold text-gray-900 mt-1">

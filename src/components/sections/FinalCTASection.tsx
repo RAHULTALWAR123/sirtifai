@@ -30,7 +30,7 @@ const FinalCTASection: React.FC = () => {
           </div>
           <div className="flex flex-row items-center justify-center gap-2 md:gap-6 pt-2 mt-8">
             <button className="w-full sm:w-auto inline-flex justify-center items-center rounded-full bg-[#173447] hover:bg-[#132B3B] text-white font-medium text-[.75rem] md:text-base px-2 md:px-10 py-2 md:py-4 shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40">
-              Join The Freelancer Programme
+              Join The PGCAP
             </button>
             <button className="w-full sm:w-auto inline-flex justify-center items-center rounded-full bg-white text-gray-900 font-medium text-[.75rem] md:text-base px-10 py-4 shadow-sm hover:bg-gray-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40">
               Schedule A Free Call

@@ -43,6 +43,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
       { label: "Freelancer ", href: "/freelancer" },
       { label: "Spp", href: "/program" },
       { label: "Training Partner Program", href: "/training-partner-program" },
+      { label: "Scholarship", href: "/scholarship" },
     ],
 
 

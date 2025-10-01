@@ -16,8 +16,7 @@ const HeroSection = () => {
           <div className="space-y-8 order-2 lg:order-1">
             <div className="space-y-6 text-center lg:text-left">
               <h1 className="text-4xl lg:text-6xl font-semibold text-gray-900 leading-tight">
-                Sirtifai Freelancer
-Programme – Earn from
+                Sirtifai PGCAP Earn from
 Day 1, Grow for Life.
                 <span className="inline-block ml-2">
                   <svg
@@ -32,7 +31,7 @@ Day 1, Grow for Life.
 
               <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
 Work on real projects, get paid monthly, build a verified              
-freelance career with payroll, legal, and client access.              </p>
+PGCAP career with payroll, legal, and client access.              </p>
             </div>
 
             {/* Action Buttons */}
