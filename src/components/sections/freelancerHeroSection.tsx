@@ -8,7 +8,7 @@ import { Button } from '../ui/Button';
 // Hero Section Component
 const HeroSection = () => {
   return (
-    <section className="bg-[#FEF7F1] min-h-screen flex items-center">
+    <section className="bg-[#FEF7F1] min-h-[200px] flex items-center">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
@@ -36,17 +36,17 @@ PGCAP career with payroll, legal, and client access.              </p>
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button className="bg-slate-800 rounded-full hover:bg-slate-700 text-white text-lg font-medium gap-3">
+              {/* <Button className="bg-slate-800 rounded-full hover:bg-slate-700 text-white text-lg font-medium gap-3">
                 <Play className="w-5 h-5 fill-white" />
                 Watch Stories
-              </Button>
-              <Button
+              </Button> */}
+              {/* <Button
                 variant="outline"
                 className=" bg-[#FE7743] text-white text-lg rounded-full font-medium gap-3"
               >
                 <Calendar className="w-5 h-5" />
                 Join Next Event
-              </Button>
+              </Button> */}
             </div>
           </div>
 

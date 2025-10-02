@@ -65,22 +65,22 @@ export const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             {/* Button */}
-            <MotionDiv
+            {/* <MotionDiv
               className="bg-[#284050] text-white rounded-full text-sm sm:text-base font-semibold flex items-center justify-between gap-3 hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 w-[72vw] lg:w-full sm:w-[226px] h-[56px] sm:h-[64px] p-1"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >
-              <button className="border border-gray-border rounded-full w-[71vw] lg:w-full h-full flex justify-between pl-4 pr-1 py-4 sm:pl-6 sm:py-5 items-center gap-2 font-open-sans">
+            > */}
+              {/* <button className="border border-gray-border rounded-full w-[71vw] lg:w-full h-full flex justify-between pl-4 pr-1 py-4 sm:pl-6 sm:py-5 items-center gap-2 font-open-sans">
                 Book A Call
                 <div className="rounded-full p-3 bg-[#bdbdbd] flex justify-center items-center">
                   <Phone size={18} />
                 </div>
-              </button>
-            </MotionDiv>
+              </button> */}
+            {/* </MotionDiv> */}
 
             {/* Paragraph */}
             <MotionP
-              className="text-[#b1ada9] font-inter font-normal text-[0.875rem] leading-[136%] sm:w-[60%] w-[76vw]"
+              className="text-black font-inter font-normal text-[0.875rem] leading-[136%] sm:w-[60%] w-[76vw]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}

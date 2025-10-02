@@ -53,7 +53,7 @@ export const ComparisonTable = () => {
     },
     {
       feature: "Affordable Entry Plans",
-      sirtifai: { priceRange: "₹1.9K-35K/month" },
+      sirtifai: { priceRange: "₹60K" },
       internshala: { note: "Free/Low" },
       apna: { note: "Free" },
       upgrad: { note: "₹60K+" },
@@ -91,7 +91,7 @@ export const ComparisonTable = () => {
                     Feature
                   </th>
                   <th className="bg-[#cf5a2a] text-white px-6 py-4 font-semibold w-[22%]">
-                    Sirtifai (SPP/SER)
+                    Sirtifai (PGCAP)
                   </th>
                   <th className="bg-orange-500 text-white px-6 py-4 font-semibold w-[15%]">
                     Internshala

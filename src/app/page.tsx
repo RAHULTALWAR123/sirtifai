@@ -19,7 +19,7 @@ export default function HomePage() {
       <ProgramTracksSection />
       <SuccessStoriesSection />
       <CertificationsSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <PartnersRecognitionSection />
       <ImpactNumbersSection />
       <Footer />

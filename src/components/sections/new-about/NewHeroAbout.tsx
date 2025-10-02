@@ -29,7 +29,7 @@ const NewHeroAbout = () => {
       </button>
 
       <p className="mt-4 text-gray-700 sm:text-sm text-xs">
-        Pay only ₹799 for the exam. Clear it → get full access worth ₹70,800.
+        Pay only ₹799 for the exam. Clear it → get full access worth ₹60,000.
       </p>
     </section>
   );

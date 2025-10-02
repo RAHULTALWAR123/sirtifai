@@ -55,12 +55,12 @@ const BonusesSection: React.FC = () => {
           ))}
         </div>
         <div className="flex flex-row gap-4 justify-center">
-          <button className="inline-flex justify-center items-center rounded-sm bg-orange-500 hover:bg-orange-600 text-white font-medium text-sm px-8 py-3 shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/40">
+          {/* <button className="inline-flex justify-center items-center rounded-sm bg-orange-500 hover:bg-orange-600 text-white font-medium text-sm px-8 py-3 shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/40">
             Apply Now
           </button>
           <button className="inline-flex justify-center items-center rounded-sm border border-orange-300 text-orange-600 font-medium text-sm px-8 py-3 bg-white hover:bg-orange-50 transition-colors shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/30">
             Talk to a Career Advisor
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

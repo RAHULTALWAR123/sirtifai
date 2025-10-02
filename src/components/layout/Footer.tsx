@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Twitter, Youtube, Mail, Phone, HelpCircle, MessageCircle } from "lucide-react";
+import { Facebook, Twitter, Youtube, Mail, Phone, HelpCircle, MessageCircle, Instagram } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
@@ -114,7 +114,7 @@ export const Footer = () => {
                   <Facebook size={20} />
                 </div>
                 <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors cursor-pointer">
-                  <Twitter size={20} />
+                  <Instagram size={20} />
                 </div>
                 <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors cursor-pointer">
                   <Youtube size={20} />
@@ -193,21 +193,21 @@ export const Footer = () => {
                   className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
                 >
                   <Mail size={16} className="mr-2" />
-                  Emails
+                  info@sirtifai.com
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="flex items-center text-gray-800 hover:text-gray-800 transition-colors"
                 >
                   <Phone size={16} className="mr-2" />
                   Phone
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="/contact"
                   className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
                 >
                   <HelpCircle size={16} className="mr-2" />
-                  Help Center
+                  Contact
                 </a>
               </div>
             </div>
@@ -236,7 +236,7 @@ export const Footer = () => {
                 >
                   About Us
                 </a>
-                <a
+                {/* <a
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
@@ -245,8 +245,8 @@ export const Footer = () => {
                   className="block text-gray-600 hover:text-gray-800 transition-colors"
                 >
                   Programs
-                </a>
-                <a
+                </a> */}
+                {/* <a
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
@@ -255,7 +255,7 @@ export const Footer = () => {
                   className="block text-gray-600 hover:text-gray-800 transition-colors"
                 >
                   Contact
-                </a>
+                </a> */}
                 <a
                   href="#"
                   onClick={(e) => {

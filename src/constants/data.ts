@@ -39,20 +39,20 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     hasDropdown: true,
     dropdownItems: [
 
-      { label: "International ", href: "/sirtifai-international" },
-      { label: "Freelancer ", href: "/freelancer" },
-      { label: "Spp", href: "/program" },
-      { label: "Training Partner Program", href: "/training-partner-program" },
+      // { label: "International ", href: "/sirtifai-international" },
+      { label: "PGCAP ", href: "/freelancer" },
+      // { label: "Spp", href: "/program" },
+      // { label: "Ascend", href: "/training-partner-program" },
       { label: "Scholarship", href: "/scholarship" },
     ],
 
 
   },
-  { label: "Learners", href: "/learners" },
-  { label: "Certifications", href: "/certifications" },
-  { label: "Media and Campaign", href: "/media-and-campaign" },
+  // { label: "Learners", href: "/learners" },
+  // { label: "Certifications", href: "/certifications" },
+  // { label: "Media and Campaign", href: "/media-and-campaign" },
   {
-    label: "More",
+    label: "Explore",
     href: "#",
     hasDropdown: true,
     dropdownItems: [
@@ -65,9 +65,12 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
       // { label: "Sirtify International", href: "/sirtify-international" },
        { label: "Drop I India", href: "/drop-i-india" },
         { label: "Grenov", href: "/grenov" },
+         { label: "Learners", href: "/learners" },
+  { label: "Certifications", href: "/certifications" },
+  { label: "Media and Campaign", href: "/media-and-campaign" },
         
-        { label: "Programmer", href: "/programmer" },
-      { label: "Contact Us", href: "/contact" },
+        // { label: "Programmer", href: "/programmer" },
+      // { label: "Contact Us", href: "/contact" },
       { label: "FAQ", href: "/faq" },         
     ],
 
@@ -76,10 +79,10 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
 ];
 
 export const SPP_OPTIONS: SPPOption[] = [
-  { id: "spp-int", label: "International", href: "/sirtifai-international" },
-  { id: "spp-freelance", label: "Freelance", href: "/freelancer" },
-  { id: "spp-student", label: "SPP Student", href: "/program" },
-  { id: "spp-partner", label: "Training Partner Program", href: "/training-partner-program" },
+  // { id: "spp-int", label: "International", href: "/sirtifai-international" },
+  { id: "spp-freelance", label: "PGCAP", href: "/freelancer" },
+  // { id: "spp-student", label: "SPP Student", href: "/program" },
+  // { id: "spp-partner", label: "Ascend", href: "/training-partner-program" },
 ];
 
 export const USERS: User[] = [
@@ -128,23 +131,23 @@ export const STEPS: Step[] = [
 ];
 
 export const PROGRAM_TRACKS: ProgramTrack[] = [
-  {
-    id: "spp-international",
-    title: "SPP International",
-    href:"/sirtifai-international",
-    subtitle: "Your global career journey in just 18 months",
-    features: [
-      "Global job placement with visa support",
-      "Practice phase with real client projects",
-      "NSQF certified skill development",
-    ],
-    buttonText: "Join Now",
-    variant: "default",
-    icon: Globe,
-  },
+  // {
+  //   id: "spp-international",
+  //   title: "SPP International",
+  //   href:"/sirtifai-international",
+  //   subtitle: "Your global career journey in just 18 months",
+  //   features: [
+  //     "Global job placement with visa support",
+  //     "Practice phase with real client projects",
+  //     "NSQF certified skill development",
+  //   ],
+  //   buttonText: "Join Now",
+  //   variant: "default",
+  //   icon: Globe,
+  // },
   {
     id: "spp-domestic-freelancer",
-    title: "SPP Domestic Freelancer",
+    title: "Post Graduation Certificate in Applied Profession",
     href: "/freelancer",
     subtitle: "Your global career journey in just 18 months",
     features: [
@@ -156,20 +159,20 @@ export const PROGRAM_TRACKS: ProgramTrack[] = [
     variant: "highlighted",
     icon: Share2,
   },
-  {
-    id: "spp-freshers-track",
-    title: "SPP Freshers Track",
-    href: "/program",
-    subtitle: "Perfect for students and recent graduates",
-    features: [
-      "College-to-career transition support",
-      "Industry-ready portfolio development",
-      "First job placement assistance",
-    ],
-    buttonText: "Join Now",
-    variant: "default",
-    icon: GraduationCap,
-  },
+  // {
+  //   id: "spp-freshers-track",
+  //   title: "SPP Freshers Track",
+  //   href: "/program",
+  //   subtitle: "Perfect for students and recent graduates",
+  //   features: [
+  //     "College-to-career transition support",
+  //     "Industry-ready portfolio development",
+  //     "First job placement assistance",
+  //   ],
+  //   buttonText: "Join Now",
+  //   variant: "default",
+  //   icon: GraduationCap,
+  // },
 ];
 
 export const SUCCESS_STORIES: SuccessStory[] = [
@@ -314,12 +317,12 @@ export const MEMBERSHIP_RECOGNITION = [
     logo: "/assets/home/nasscom.png",
     color: "text-black",
   },
-  {
-    id: "skill-india",
-    name: "Skill India",
-    logo: "/assets/home/skill-india.png",
-    color: "text-black",
-  },
+  // {
+  //   id: "skill-india",
+  //   name: "Skill India",
+  //   logo: "/assets/home/skill-india.png",
+  //   color: "text-black",
+  // },
   {
     id: "msme",
     name: "MSME",

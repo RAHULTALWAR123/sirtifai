@@ -45,7 +45,7 @@ const ProgramSelection: React.FC<ProgramSelectionProps> = ({
         {/* Table header */}
         <div className="grid grid-cols-5 gap-6 text-sm font-semibold text-gray-700 pb-2 border-b border-gray-200 px-5">
           <div>Plan Name</div>
-          <div>Duration</div>
+          {/* <div>Duration</div> */}
           <div>Price (₹)</div>
           <div>Key Features</div>
           <div className="text-center">Select</div>
@@ -62,11 +62,11 @@ const ProgramSelection: React.FC<ProgramSelectionProps> = ({
 
           const durationOptions = isMonthly
             ? (() => {
-                if (!program.monthlyOptions) return [3, 6];
+                if (!program.monthlyOptions) return [12];
                 const [min, max] = program.monthlyOptions.split("-").map(Number);
                 return Array.from({ length: max - min + 1 }, (_, i) => min + i);
               })()
-            : [3, 6];
+            : [12];
 
           return (
             <div
@@ -84,7 +84,7 @@ const ProgramSelection: React.FC<ProgramSelectionProps> = ({
               </div>
 
               {/* Duration dropdown */}
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <select
                   className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-white"
                   value={duration}
@@ -101,11 +101,12 @@ const ProgramSelection: React.FC<ProgramSelectionProps> = ({
                     </option>
                   ))}
                 </select>
-              </div>
+              </div> */}
 
               {/* Price */}
               <div className="flex items-center font-bold text-gray-900">
-                ₹{price.toLocaleString()}
+                ₹60,000
+
               </div>
 
               {/* Features */}

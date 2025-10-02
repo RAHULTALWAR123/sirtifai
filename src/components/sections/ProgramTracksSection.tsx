@@ -36,13 +36,13 @@ export const ProgramTracksSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <MotionDiv 
-          className="text-center mb-16"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
           <MotionH2 
-            className="text-orange-500 font-open-sans text-lg font-semibold uppercase tracking-wider mb-3"
+            className="text-orange-500 font-open-sans text-lg font-semibold uppercase tracking-wider"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -60,7 +60,7 @@ export const ProgramTracksSection = () => {
         </MotionDiv>
 
         {/* Program Tracks Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-end place-items-end">
+        <div className="gap-8 justify-items-end place-items-end">
           {PROGRAM_TRACKS.map((track, index) => {
             const IconComponent = track.icon;
             const isHighlighted = track.variant === 'highlighted';
@@ -68,7 +68,7 @@ export const ProgramTracksSection = () => {
             return (
               <MotionDiv
                 key={track.id}
-                className={`rounded-2xl w-full ${index % 2 === 0 ? 'h-[538px]' : 'h-[570px]'} p-8 transition-all duration-300 hover:scale-105 ${
+                className={`rounded-2xl w-full ${index % 2 === 0 ? 'h-[408px]' : 'h-[570px]'} p-8 transition-all duration-300 hover:scale-105 ${
                   isHighlighted
                     ? 'order-1 md:order-none bg-orange-500 text-white shadow-2xl'
                     : 'order-2 md:order-none bg-white text-gray-900 shadow-lg hover:shadow-xl'
@@ -81,14 +81,14 @@ export const ProgramTracksSection = () => {
               >
                 {/* Icon */}
                 
-                <div className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center ${
+                {/* <div className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center ${
                   isHighlighted ? 'bg-white/20' : 'bg-gray-100'
                 }`}>
                   <IconComponent 
                     size={32} 
                     className={isHighlighted ? 'text-white' : 'text-gray-600'} 
                   />
-                </div>
+                </div> */}
 
                 {/* Title */}
                 <MotionH4 
@@ -112,13 +112,13 @@ export const ProgramTracksSection = () => {
                   {track.subtitle}
                 </MotionP>
 
-                <div className={`w-full flex flex-col justify-center items-center p-6 rounded-xl gap-6 text-gray-900 ${
+                <div className={`w-1/2 mx-auto flex flex-col justify-center items-center p-6 rounded-xl gap-6 text-gray-900 ${
                   isHighlighted
                     ? ' bg-white'
                     : 'bg-[#F9FAFB]'
                 }`}>
                 {/* Features */}
-                <div className="sm:space-y-4 mb-8">
+                <div className="sm:space-y-4 mb-4">
                   {track.features?.map((feature, featureIndex) => (
                     <MotionDiv 
                       key={featureIndex} 

@@ -217,13 +217,13 @@
   "freelancer": {
     "freelancer-basic": {
       "id": "freelancer-basic",
-      "name": "Freelancer Basic Package",
+      "name": "PGCAP",
       "description": "Essential freelancing tools and basic templates",
       "category": "freelancer",
       "type": "one-time",
       "sacCode": "999293",
       "priceEnvVar": "NEXT_PUBLIC_FREELANCER_BASIC_PRICE",
-      "price": 15000 ,
+      "price": 60000 ,
       "features": [
         "Access to essential freelancing tools for day-to-day operations",
         "Basic contract and invoice templates",

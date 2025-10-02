@@ -39,19 +39,19 @@ export const WhySirtifaiHero = () => {
               We don&apos;t just train you — we make you work-ready, connect you to real projects, pay you while you learn, and support your career for life.
             </p>
             <div className="mt-8 md:mt-10 flex flex-row flex-wrap gap-3 sm:gap-5 items-center">
-              <Button
+              {/* <Button
                 variant="primary"
                 size="sm"
                 className="order-1 sm:order-2 rounded-full px-5 py-2 text-sm sm:px-8 sm:py-4 sm:text-lg"
               >
                 Book Free Demo
-              </Button>
+              </Button> */}
               <Button
                 variant="secondary"
                 size="sm"
                 className="order-2 sm:order-1 relative rounded-full px-5 py-2 text-sm sm:px-8 sm:py-4 sm:text-lg bg-[#1F3644] hover:bg-[#214050] text-white overflow-hidden before:absolute before:inset-0 before:rounded-full before:border before:border-white/10 after:absolute after:inset-[3px] after:rounded-full after:border after:border-white/35 shadow-lg"
               >
-                Explore SPP Programmes
+                Explore PGCAP
               </Button>
             </div>
           </div>

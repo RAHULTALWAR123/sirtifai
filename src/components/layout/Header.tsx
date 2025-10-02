@@ -91,6 +91,19 @@ export const Header = () => {
           </button>
         </div>
 
+        
+
+<div className="flex items-center gap-10 ml-10">
+
+  <p>Approved Training Partner of NSDC</p>
+        <img src="\assets\Logos\NSDC-Skill-India.webp" alt="test" 
+        width={96}
+        height={60}
+         className="sm:w-[160px] sm:h-[60px] lg:w-[160px] lg:h-[60px]"
+
+        />
+</div>
+
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-8 font-open-sans text-[1rem] text-black font-normal">
           {NAVIGATION_ITEMS.map((item) => {

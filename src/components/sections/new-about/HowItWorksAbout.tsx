@@ -17,10 +17,10 @@ const HowItWorksAbout = () => {
           To get started, simply register and pay a nominal fee of{" "}
           <span className="font-semibold">₹799</span> to book your scholarship
           exam. Once registered, you’ll take a secure online proctored exam that
-          lasts 60–90 minutes and covers essential skills through 50–60
+          lasts 90 minutes and covers essential skills through 60
           questions. If you clear the exam with the required score, you’ll
           unlock a 100% scholarship that gives you free access to our full{" "}
-          <span className="font-semibold">₹70,800</span> freelance program,
+          <span className="font-semibold">₹60,000</span> freelance program,
           including training, projects, mentorship, and placement support.
         </p>
 
@@ -43,7 +43,7 @@ const HowItWorksAbout = () => {
   {/* Left Label */}
   <div className="absolute left-20 top-1/2 -translate-y-1/2 text-white text-sm font-medium 
                    px-5 py-3 rounded-r-lg shadow-md leading-tight">
-    Format: 50–60 questions,<br />60–90 minutes,<br />online proctored
+    Format: 60 questions,<br />90 minutes,<br />online proctored
   </div>
 
   {/* White Center Card */}

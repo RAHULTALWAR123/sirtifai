@@ -293,7 +293,7 @@ export default function TeamMemberCarousel() {
                             <p className="text-gray-600 text-xs leading-relaxed">{member.bio}</p>
                           </div>
                           
-                          <div>
+                          {/* <div>
                             <h5 className="font-semibold text-gray-800 text-sm mb-1">LinkedIn</h5>
                             <a 
                               href={`https://${member.linkedin}`} 
@@ -303,7 +303,7 @@ export default function TeamMemberCarousel() {
                             >
                               {member.linkedin}
                             </a>
-                          </div>
+                          </div> */}
 
                           <div>
                             <h5 className="font-semibold text-gray-800 text-sm mb-1">Department Oversight</h5>

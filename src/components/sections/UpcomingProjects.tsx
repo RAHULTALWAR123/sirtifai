@@ -1,6 +1,7 @@
 "use client"
 
 import { motion, useInView } from "framer-motion"
+import Link from "next/link"
 import { useRef } from "react"
 
 const MotionDiv = motion.div as React.ComponentType<any>
@@ -60,20 +61,24 @@ export default function UpcomingProjectsHero() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
+            <Link href={"/freelancer"}>
             <MotionButton
-              className="transform rounded-full bg-orange-500 px-8 py-3 font-medium text-white transition-transform hover:scale-105 hover:bg-orange-600"
+              className="transform  cursor-pointer rounded-full bg-orange-500 px-8 py-3 font-medium text-white transition-transform hover:scale-105 hover:bg-orange-600"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >
+              >
               Apply Now
             </MotionButton>
+              </Link>
+              <Link href={"/contact"}>
             <MotionButton
-              className="transform rounded-full border border-orange-300 px-8 py-3 font-medium text-orange-600 transition-transform hover:scale-105 hover:bg-orange-50"
+              className="transform  cursor-pointer rounded-full border border-orange-300 px-8 py-3 font-medium text-orange-600 transition-transform hover:scale-105 hover:bg-orange-50"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >
+              >
               Contact
             </MotionButton>
+              </Link>
           </MotionDiv>
         </MotionDiv>
 

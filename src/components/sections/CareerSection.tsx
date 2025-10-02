@@ -2,6 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
+import Link from "next/link"
 
 const MotionDiv = motion.div as React.ComponentType<any>
 const MotionH2 = motion.h2 as React.ComponentType<any>
@@ -56,16 +57,18 @@ export default function PartnersAndCTA() {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
+          <Link href={"/contact"}>
           <MotionButton
-            className="bg-white text-[#FF6F3C] px-5 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:bg-gray-100 transition text-sm sm:text-base"
+            className="bg-white cursor-pointer text-[#FF6F3C] px-5 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:bg-gray-100 transition text-sm sm:text-base"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.6, delay: 1.0 }}
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-          >
+            >
             Book free career call →
           </MotionButton>
+            </Link>
         </MotionDiv>
       </MotionDiv>
 

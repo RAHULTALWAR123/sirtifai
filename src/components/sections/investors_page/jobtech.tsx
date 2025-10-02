@@ -125,11 +125,11 @@ export default function JobTech() {
                 Traction
               </h4>
               <ul className="list-disc list-inside space-y-1 text-gray-700">
-                <li>50,000+ Active Learners (SPP & Freelancer)</li>
+                <li>50,000+ Active Learners (SPP & PGCAP)</li>
                 <li>
                   10,000+ Target Monthly Closures in AP, Telangana, and UP
                 </li>
-                <li>78% Retention Rate (SPP)</li>
+                <li>78% Retention Rate (PGCAP)</li>
                 <li>34% Learner Referral Rate</li>
               </ul>
             </div>
@@ -139,8 +139,8 @@ export default function JobTech() {
                 Revenue Streams
               </h4>
               <ul className="list-disc list-inside space-y-1 text-gray-700">
-                <li>Subscriptions (SPP)</li>
-                <li>One-time Programs (International)</li>
+                <li>Subscriptions (PGCAP)</li>
+                {/* <li>One-time Programs (International)</li> */}
                 <li>Add-ons (Payroll, Legal, Insurance)</li>
                 <li>
                   Partnerships (Colleges, influencers, immigration agents)
@@ -167,7 +167,7 @@ export default function JobTech() {
               <h4 className="text-orange-600 font-bold uppercase mb-2">
                 Programs & Business Models
               </h4>
-              <h5 className="font-bold mb-1">
+              {/* <h5 className="font-bold mb-1">
                 SPP (Skill • Practice • Progress)
               </h5>
               <ul className="list-disc list-inside space-y-1 text-gray-700">
@@ -182,10 +182,10 @@ export default function JobTech() {
                   Progress (Lifetime): Placement, re-entry, job-switch, global
                   track.
                 </li>
-              </ul>
-              <p className="mt-1">💰 Pricing: ₹5,999 – ₹5,99,999/month</p>
+              </ul> */}
+              {/* <p className="mt-1">💰 Pricing: ₹5,999 – ₹5,99,999/month</p> */}
 
-              <h5 className="font-bold mt-4 mb-1">Sirtifai International</h5>
+              {/* <h5 className="font-bold mt-4 mb-1">Sirtifai International</h5>
               <ul className="list-disc list-inside space-y-1 text-gray-700">
                 <li>Global placements in US, Canada, Germany.</li>
                 <li>One-time fee programs with visa-ready tracks.</li>
@@ -194,10 +194,10 @@ export default function JobTech() {
               <p className="mt-1">
                 💰 Pricing: Basic – ₹79,999 | Pro – ₹2,12,999 | Elite –
                 ₹6,37,999
-              </p>
+              </p> */}
 
               <h5 className="font-bold mt-4 mb-1">
-                Sirtifai Freelancer (Domestic Projects Edition)
+                Post Graduation Certificate in Applied Profession (PGCAP)
               </h5>
               <ul className="list-disc list-inside space-y-1 text-gray-700">
                 <li>One-time payment → immediate verified income.</li>
@@ -205,7 +205,7 @@ export default function JobTech() {
                 <li>Income range: ₹12K–₹35K/month.</li>
               </ul>
               <p className="mt-1">
-                💰 Pricing: Basic – ₹15,000 | Pro – ₹31,860 | Elite – ₹70,800
+                💰 Pricing: ₹60,000
               </p>
             </div>
 

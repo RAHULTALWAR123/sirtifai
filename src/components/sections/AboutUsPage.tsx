@@ -97,17 +97,17 @@ export const AboutUsPage = () => {
                 <span className="font-semibold text-orange-600">Join Now :</span>
 
                 {/* Links */}
-                <a href="/sirtifai-international" className="text-orange-600 font-medium">
+                {/* <a href="/sirtifai-international" className="text-orange-600 font-medium">
                   International
-                </a>
+                </a> */}
                 <span className="text-orange-600">|</span>
                 <a href="/freelancer" className="text-orange-600 font-medium">
-                  Freelance
+                  Post Graduation Certificate in Applied Profession
                 </a>
                 <span className="text-orange-600">|</span>
-                <a href="/program" className="text-orange-600 font-medium">
+                {/* <a href="/program" className="text-orange-600 font-medium">
                   SPP Student
-                </a>
+                </a> */}
               </div>
             </MotionDiv>
           </MotionDiv>
@@ -285,11 +285,11 @@ export const AboutUsPage = () => {
               animate={whySertifaiInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 2.0 }}
             >
-              <MotionDiv whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              {/* <MotionDiv whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button className="rounded-full" variant="primary" size="md">
                 View More
               </Button>
-              </MotionDiv>
+              </MotionDiv> */}
             </MotionDiv>
           </MotionDiv>
         </div>

@@ -103,25 +103,25 @@ export default function HeroSection() {
             animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <div className="flex flex-nowrap items-center justify-start gap-2 sm:gap-4 w-full whitespace-nowrap leading-none text-[clamp(0.95rem,3vw,1rem)] md:text-[clamp(0.85rem,2vw,1.4rem)]">
+            <div className="flex flex-nowrap items-center justify-start gap-0 sm:gap-4 w-full whitespace-nowrap leading-none text-[clamp(0.95rem,3vw,1rem)] md:text-[clamp(0.85rem,2vw,1.4rem)]">
               {/* Label */}
               <span className="font-semibold text-[#273F4F]">Join Now :</span>
 
               {/* Links */}
-              <a
+              {/* <a
                 href="/sirtifai-international"
                 className="text-orange-600 font-medium"
               >
                 International
-              </a>
+              </a> */}
               <span className="text-orange-600">|</span>
               <a href="/freelancer" className="text-orange-600 font-medium">
-                Freelancer
+                Post Graduate Certificate in Applied Profession
               </a>
               <span className="text-orange-600">|</span>
-              <a href="/program" className="text-orange-600 font-medium">
+              {/* <a href="/program" className="text-orange-600 font-medium">
                 SPP
-              </a>
+              </a> */}
             </div>
 
             {/* CTA Buttons */}
@@ -133,7 +133,7 @@ export default function HeroSection() {
               }
               transition={{ duration: 0.6, delay: 1.0 }}
             >
-              <MotionDiv
+              {/* <MotionDiv
                 className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-full font-medium transition-colors duration-200 flex items-center gap-2 cursor-pointer whitespace-nowrap text-sm sm:text-base"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -151,15 +151,15 @@ export default function HeroSection() {
                   />
                 </svg>
                 Investor Deck
-              </MotionDiv>
+              </MotionDiv> */}
 
-              <MotionDiv
+              {/* <MotionDiv
                 className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-3 rounded-full font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap text-sm sm:text-base"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Book A Call With Founders
-              </MotionDiv>
+              </MotionDiv> */}
             </MotionDiv>
           </MotionDiv>
         </MotionDiv>
