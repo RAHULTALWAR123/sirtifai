@@ -165,7 +165,7 @@ export const ToolsSection = () => {
       ))}
     </div>
 
-    <MotionButton
+    {/* <MotionButton
       className="w-full bg-orange-500 text-white py-3 px-6 rounded-full font-semibold hover:bg-orange-600 transition-colors"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={cardsInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -174,7 +174,7 @@ export const ToolsSection = () => {
       whileTap={{ scale: 0.95 }}
     >
       {tool.buttonText}
-    </MotionButton>
+    </MotionButton> */}
   </MotionDiv>
 </MotionDiv>
 

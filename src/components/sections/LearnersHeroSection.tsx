@@ -79,7 +79,7 @@ export const LearnersHeroSection = () => {
               animate={leftInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: 0.9 }}
             >
-              <MotionButton
+              {/* <MotionButton
                 className="flex relative w-fit sm:w-auto items-center justify-between pl-4 pr-2 py-2 sm:px-[12px] sm:-mr-2 sm:mb-0 mb-7 sm:py-1 bg-[#243946] text-white rounded-full border border-white hover:bg-[#1b2c38] transition-colors font-semibold text-base shadow-md"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -94,7 +94,7 @@ export const LearnersHeroSection = () => {
                     <CalendarCheck size={20} className="text-white" />
                   </MotionDiv>
                 </div>
-              </MotionButton>
+              </MotionButton> */}
 
               <MotionDiv
                 className="sm:hidden flex items-center gap-4 sm:-mt-0 -mt-7"
