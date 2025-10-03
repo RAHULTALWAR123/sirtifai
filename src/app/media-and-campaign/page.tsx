@@ -15,10 +15,10 @@ export default function MediaCampaignPage() {
     <div className="bg-[#FEF7F1] font-sans min-h-screen overflow-x-hidden">
       <Header />
       <HeroSection />
-      <FeaturedLearnerStories />
+      {/* <FeaturedLearnerStories /> */}
       <IncomeTrackerWall />
       <MediaPartnersSection />
-      <SuccessGallery />
+      {/* <SuccessGallery /> */}
       <UpcomingWebinars />
       <MediaPR />
       <CampusActivities />

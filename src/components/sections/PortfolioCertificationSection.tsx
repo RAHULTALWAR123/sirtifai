@@ -140,7 +140,7 @@ export const PortfolioCertificationSection = () => {
               ))}
             </MotionDiv>
 
-            <MotionA
+            {/* <MotionA
               href="#"
               className="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 transition-colors"
               initial={{ opacity: 0, y: 20 }}
@@ -149,7 +149,7 @@ export const PortfolioCertificationSection = () => {
               whileHover={{ x: 5 }}
             >
               Learn more about our certifications →
-            </MotionA>
+            </MotionA> */}
           </MotionDiv>
 
           <MotionDiv
@@ -246,14 +246,14 @@ export const PortfolioCertificationSection = () => {
                 animate={rightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.4, delay: 1.6 }}
               >
-                <MotionButton
+                {/* <MotionButton
                   className="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Eye size={20} className="mr-2" />
                   View Full Portfolio
-                </MotionButton>
+                </MotionButton> */}
               </MotionDiv>
             </MotionDiv>
           </MotionDiv>

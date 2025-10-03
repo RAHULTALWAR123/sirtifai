@@ -12,10 +12,10 @@ export const GotMoreQuestions = () => {
                         Our advisors will help you choose the right plan — domestic or international — based on your  career goals.
                     </p>
                 </div>
-                <button className="mt-2 lg:mt-0 py-4 sm:py-5 pl-6 sm:pl-8 pr-4 sm:pr-5 flex justify-center items-center gap-2.5 bg-white rounded-[42px] text-[#FE7743] font-inter font-semibold text-[1.125rem] sm:text-[1.25rem] lg:text-[1.5rem] leading-[100%]">
+                {/* <button className="mt-2 lg:mt-0 py-4 sm:py-5 pl-6 sm:pl-8 pr-4 sm:pr-5 flex justify-center items-center gap-2.5 bg-white rounded-[42px] text-[#FE7743] font-inter font-semibold text-[1.125rem] sm:text-[1.25rem] lg:text-[1.5rem] leading-[100%]">
                     <p>Book free career call</p>
                     <IoIosArrowForward/>
-                </button>
+                </button> */}
             </div>
         </section>
     )

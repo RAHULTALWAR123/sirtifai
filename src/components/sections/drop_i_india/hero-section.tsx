@@ -4,7 +4,8 @@ import Image from "next/image";
 import { CtaButton } from "../../common/cta-button";
 import { motion, useInView } from "framer-motion";
 import type { MotionProps } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import DonateModal from "./DonateModal";
 
 // Typed motion elements accepting className and ref
 type DivMotionComponentProps = React.HTMLAttributes<HTMLDivElement> & MotionProps & React.RefAttributes<HTMLDivElement>;
@@ -31,7 +32,9 @@ const textItemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
+
 export default function HeroSection() {
+  const [isDonateModalOpen, setDonateModalOpen] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null);
   const inView = useInView(containerRef as React.RefObject<Element>, {
     once: true,
@@ -74,22 +77,22 @@ export default function HeroSection() {
             variants={textItemVariants}
             className="mt-3 max-w-prose text-sm leading-6 text-gray-600 sm:text-lg"
           >
-            Join SPP Now <span className="text-[#FE7743]">|</span>
+            Join PGCAP Now 
           </MotionP>
 
           <MotionDiv
             variants={textItemVariants}
             className="mt-6 flex flex-wrap md:min-w-[600px] items-center gap-2 overflow-visible"
           >
-            <CtaButton href="#join" variant="solid">
+            {/* <CtaButton href="#join" variant="solid">
               Join the Movement
-            </CtaButton>
-            <CtaButton href="#donate" variant="solid">
+            </CtaButton> */}
+            <button className="cursor-pointer bg-[#FE7743] px-2 py-2 sm:px-6 sm:py-[14px] rounded-lg text-[10px] sm:text-sm font-medium flex items-center justify-between gap-2 sm:min-w-[140px] group hover:shadow-md transition-all duration-300 hover:scale-105"  onClick={() => setDonateModalOpen(true)}>
               Donate A Drop
-            </CtaButton>
-            <CtaButton href="#partner" variant="solid">
+            </button>
+            {/* <CtaButton href="#partner" variant="solid">
               Partner with Us
-            </CtaButton>
+            </CtaButton> */}
           </MotionDiv>
         </MotionDiv>
 
@@ -112,6 +115,7 @@ export default function HeroSection() {
           </MotionDiv>
         </div>
       </div>
+      <DonateModal isOpen={isDonateModalOpen} onClose={() => setDonateModalOpen(false)} />
     </section>
   );
 }

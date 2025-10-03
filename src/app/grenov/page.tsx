@@ -14,7 +14,7 @@ export default function ContactPage() {
   return (
     <div className="bg-[#fff] font-sans min-h-screen overflow-x-hidden">
       <Header />
-      <div className="">
+      {/* <div className=""> */}
         <HeroSection />
         <AboutGrenoa />
         <GrenovEcoSystem />
@@ -22,7 +22,7 @@ export default function ContactPage() {
         <InnovationInAction />
         <LogoMarquee />
         <CtaBand />
-      </div>
+      {/* </div> */}
       <Footer />
     </div>
   );

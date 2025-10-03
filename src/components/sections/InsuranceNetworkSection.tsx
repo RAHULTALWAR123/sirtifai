@@ -229,7 +229,7 @@ export const InsuranceNetworkSection = () => {
           >
             Customize your insurance coverage based on your specific needs and program requirements.
           </MotionP>
-          <MotionDiv
+          {/* <MotionDiv
             className="flex flex-col sm:flex-row gap-4 justify-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -242,7 +242,7 @@ export const InsuranceNetworkSection = () => {
             <button className="bg-white text-[#FE7642] border-2 border-[#FE7642] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#FE7642] hover:text-white transition-colors">
               View All Add-ons
             </button>
-          </MotionDiv>
+          </MotionDiv> */}
         </MotionDiv>
       </div>
     </MotionSection>

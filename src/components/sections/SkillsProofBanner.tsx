@@ -3,6 +3,7 @@
 import { ChevronRight } from "lucide-react"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
+import Link from "next/link"
 
 const MotionSection = motion.section as React.ComponentType<any>
 const MotionDiv = motion.div as React.ComponentType<any>
@@ -57,6 +58,7 @@ export const SkillsProofBanner = () => {
             animate={bannerInView ? { opacity: 1, x: 0, scale: 1 } : { opacity: 0, x: 50, scale: 0.9 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
+            <Link href={"/freelance"}>
             <MotionButton
               className="bg-white text-[#FE7743] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors shadow-lg hover:shadow-xl flex items-center gap-2"
               whileHover={{ scale: 1.05, y: -2 }}
@@ -73,6 +75,7 @@ export const SkillsProofBanner = () => {
                 <ChevronRight size={20} className="text-[#FE7743]" />
               </MotionDiv>
             </MotionButton>
+              </Link>
           </MotionDiv>
         </div>
       </div>

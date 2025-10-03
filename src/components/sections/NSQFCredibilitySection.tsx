@@ -29,7 +29,7 @@ export const NSQFCredibilitySection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <MotionDiv
-            className="bg-orange-500 text-white px-6 py-3 rounded-lg font-bold text-base whitespace-nowrap"
+            className="bg-orange-500 text-white sm:px-6 px-2 py-3 rounded-lg font-bold text-xs sm:text-lg whitespace-nowrap"
             initial={{ opacity: 0, x: -30 }}
             animate={sectionInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
             transition={{ duration: 0.6, delay: 0.4 }}

@@ -124,7 +124,7 @@ export const CoverageAtAGlanceSection = () => {
             </MotionUl>
 
             {/* CTA Button */}
-            <MotionDiv
+            {/* <MotionDiv
               className="text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -133,7 +133,7 @@ export const CoverageAtAGlanceSection = () => {
             >
               <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
 View Detailed Coverage              </button>
-            </MotionDiv>
+            </MotionDiv> */}
           </MotionDiv>
 
           {/* Card 2 - International Student Protection */}
@@ -216,7 +216,7 @@ View Detailed Coverage              </button>
             </MotionUl>
 
             {/* CTA Button */}
-            <MotionDiv
+            {/* <MotionDiv
               className="text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -226,7 +226,7 @@ View Detailed Coverage              </button>
               <button className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
                 View Detailed Coverage
               </button>
-            </MotionDiv>
+            </MotionDiv> */}
           </MotionDiv>
         </div>
 
@@ -247,7 +247,7 @@ View Detailed Coverage              </button>
           >
             Ready to get protected? Choose the plan that fits your needs.
           </MotionP>
-          <MotionDiv
+          {/* <MotionDiv
             className="flex flex-col sm:flex-row gap-4 justify-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -260,7 +260,7 @@ View Detailed Coverage              </button>
             <button className="bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors">
               Get International Coverage
             </button>
-          </MotionDiv>
+          </MotionDiv> */}
         </MotionDiv>
       </div>
     </MotionSection>

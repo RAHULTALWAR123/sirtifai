@@ -115,7 +115,7 @@ export const InsuranceHeroSection = () => {
           </MotionP>
 
           {/* CTA Buttons */}
-          <MotionDiv
+          {/* <MotionDiv
             className="flex flex-col sm:flex-row gap-4 mt-8 md:mt-10"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -127,7 +127,7 @@ export const InsuranceHeroSection = () => {
             <MotionButton className="double-border-btn bg-white text-[#1f2937] border-2 border-[#1f2937] hover:bg-[#1f2937] hover:text-white">
               File A Claim
             </MotionButton>
-          </MotionDiv>
+          </MotionDiv> */}
         </div>
 
         {/* Right Side - Image */}

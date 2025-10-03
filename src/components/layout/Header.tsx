@@ -95,7 +95,7 @@ export const Header = () => {
 
 <div className="flex items-center gap-10 ml-10">
 
-  <p>Approved Training Partner of NSDC</p>
+  <p className="text-xs sm:text-md">Approved Training Partner of NSDC</p>
         <img src="\assets\Logos\NSDC-Skill-India.webp" alt="test" 
         width={96}
         height={60}

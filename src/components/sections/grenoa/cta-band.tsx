@@ -76,22 +76,22 @@ export default function CtaBand() {
           </div>
           {/* Right */}
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 w-full sm:w-auto items-center justify-center">
-            <MotionButton
+            {/* <MotionButton
               variants={item}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               className="bg-gray-900 text-white px-5 py-3 rounded-full shadow hover:bg-gray-800 transition w-full sm:w-auto"
             >
               Partner With Grenov
-            </MotionButton>
-            <MotionButton
+            </MotionButton> */}
+            {/* <MotionButton
               variants={item}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               className="bg-white text-gray-900 px-5 py-3 rounded-full shadow hover:bg-gray-100 transition w-full sm:w-auto"
             >
               Explore the Sirtital Ecosystem
-            </MotionButton>
+            </MotionButton> */}
           </div>
         </MotionDiv>
       </MotionDiv>

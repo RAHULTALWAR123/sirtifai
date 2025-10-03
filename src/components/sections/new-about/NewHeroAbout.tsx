@@ -1,4 +1,5 @@
 // src/components/NewHeroAbout.tsx
+import Link from "next/link";
 import React from "react";
 
 const NewHeroAbout = () => {
@@ -24,9 +25,11 @@ const NewHeroAbout = () => {
         <span className="text-[#FF6B2C]">100% <br /></span> Scholarship
       </h1>
 
+<Link href={"/application-form"}>
       <button className="mt-6 sm:text-sm text-xs bg-[#FF6B2C] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:opacity-90 transition">
         Register Now For ₹799 Exam
       </button>
+</Link>
 
       <p className="mt-4 text-gray-700 sm:text-sm text-xs">
         Pay only ₹799 for the exam. Clear it → get full access worth ₹60,000.

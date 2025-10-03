@@ -1,6 +1,7 @@
 "use client"
 import { Clock, CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 // Strongly typed motion components to fix TypeScript errors
 const MotionSection = motion.section as React.ComponentType<any>
@@ -186,12 +187,14 @@ export const HowToFileClaimSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 2.4 }}
           >
-            <button className="bg-[#FE7642] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#FE7642]/90 transition-colors">
+            {/* <button className="bg-[#FE7642] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#FE7642]/90 transition-colors">
               File a Claim
-            </button>
+            </button> */}
+            <Link href={"/contact"}>
             <button className="bg-white text-[#FE7642] border-2 border-[#FE7642] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#FE7642] hover:text-white transition-colors">
               Contact Support
             </button>
+            </Link>
           </MotionDiv>
         </MotionDiv>
       </div>

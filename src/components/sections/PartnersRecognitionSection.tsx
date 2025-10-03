@@ -88,67 +88,81 @@ export const PartnersRecognitionSection = () => {
 
         {/* MEMBERSHIP & RECOGNITION Section */}
  
-        <MotionDiv 
-          className="text-center relative z-10"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
+        <MotionDiv
+  className="text-center relative z-10"
+  initial={{ opacity: 0, y: 30 }}
+  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+  transition={{ duration: 0.8, delay: 0.6 }}
+>
+  <div className="flex justify-center">
+    <MotionDiv
+      className="bg-white rounded-4xl shadow-lg p-4 sm:p-6 lg:p-8 border border-gray-100 w-full max-w-6xl relative -mb-24"
+      initial={{ opacity: 0, y: 50, scale: 0.9 }}
+      animate={
+        isInView
+          ? { opacity: 1, y: 0, scale: 1 }
+          : { opacity: 0, y: 50, scale: 0.9 }
+      }
+      transition={{ duration: 0.8, delay: 0.8 }}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+    >
+      <MotionH6
+        className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 uppercase tracking-wider mb-6"
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.6, delay: 1.0 }}
+      >
+        MEMBERSHIP & RECOGNITION
+      </MotionH6>
 
-          <div className="flex justify-center">
-            <MotionDiv 
-              className="bg-white rounded-4xl shadow-lg p-4 border border-gray-100 w-full max-w-4xl relative -mb-24"
-              initial={{ opacity: 0, y: 50, scale: 0.9 }}
-              animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 50, scale: 0.9 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <MotionH6 
-                className="text-1xl font-bold text-gray-900 uppercase tracking-wider mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.6, delay: 1.0 }}
+      {/* Responsive Grid instead of fixed flex gap */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:justify-center lg:gap-16 gap-6 sm:gap-8">
+        {MEMBERSHIP_RECOGNITION.map((cert, index) => (
+          <MotionDiv
+            key={cert.id}
+            className="flex flex-col items-center text-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={
+              isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+            }
+            transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div className="w-28 sm:w-32 lg:w-36 h-16 sm:h-20 flex items-center justify-center mb-1">
+              <MotionImg
+                src={cert.logo}
+                alt={cert.name}
+                className="h-12 sm:h-16 lg:h-20 w-auto object-contain max-w-full"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={
+                  isInView
+                    ? { scale: 1, opacity: 1 }
+                    : { scale: 0.8, opacity: 0 }
+                }
+                transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = "none";
+                  const fallback = target.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = "block";
+                }}
+              />
+              {/* Fallback text */}
+              <div
+                className={`text-sm sm:text-base font-bold ${cert.color} hidden`}
               >
-                MEMBERSHIP & RECOGNITION
-              </MotionH6>
-              <div className="flex justify-center items-center gap-16">
-                {MEMBERSHIP_RECOGNITION.map((cert, index) => (
-                  <MotionDiv 
-                    key={cert.id} 
-                    className="flex flex-col items-center text-center"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                    transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <div className="w-32 h-16 flex items-center justify-center mb-1">
-                      <MotionImg
-                        src={cert.logo}
-                        alt={cert.name}
-                        className="h-20 w-auto object-contain max-w-full"
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
-                        transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                          const fallback = target.nextElementSibling as HTMLElement;
-                          if (fallback) fallback.style.display = 'block';
-                        }}
-                      />
-                      {/* Fallback text */}
-                      <div className={`text-base font-bold ${cert.color} hidden`}>
-                        {cert.name}
-                      </div>
-                    </div>
-                  </MotionDiv>
-                ))}
+                {cert.name}
               </div>
-            </MotionDiv>
-          </div>
-        </MotionDiv>
+            </div>
+          </MotionDiv>
+        ))}
+      </div>
+    </MotionDiv>
+  </div>
+</MotionDiv>
+
       </div>
     </section>
   );

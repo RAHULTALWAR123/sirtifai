@@ -35,7 +35,7 @@ const HeroSection = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button className="bg-slate-800 rounded-full hover:bg-slate-700 text-white text-lg font-medium gap-3">
                 <Play className="w-5 h-5 fill-white" />
                 Watch Stories
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 <Calendar className="w-5 h-5" />
                 Join Next Event
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Visual */}

@@ -104,32 +104,32 @@ export const LearnersHeroSection = () => {
               >
                 <span className="sm:text-lg text-xs sm:font-semibold text-orange-500 sm:text-gray-900">Join Now :</span>
                 <div className="flex items-center gap-4">
-                  <MotionA
+                  {/* <MotionA
                     href="#"
                     className="text-orange-500 sm:text-lg text-xs sm:font-semibold hover:text-orange-600 transition-colors"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     SPP Int
-                  </MotionA>
-                  <span className="text-gray-400">|</span>
+                  </MotionA> */}
+                  {/* <span className="text-gray-400">|</span> */}
                   <MotionA
                     href="#"
                     className="text-orange-500 sm:text-lg text-xs sm:font-semibold hover:text-orange-600 transition-colors"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    SPP Freelance
+                    SPP Post Graduate Certificate in Applied Profession
                   </MotionA>
-                  <span className="text-gray-400">|</span>
-                  <MotionA
+                  {/* <span className="text-gray-400">|</span> */}
+                  {/* <MotionA
                     href="#"
                     className="text-orange-500 sm:text-lg text-xs sm:font-semibold hover:text-orange-600 transition-colors"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     SPP Student
-                  </MotionA>
+                  </MotionA> */}
                 </div>
               </MotionDiv>
             </MotionDiv>

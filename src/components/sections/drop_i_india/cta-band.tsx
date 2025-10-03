@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { CtaButton } from "../../common/cta-button"
 
 export default function CtaBand() {
@@ -22,10 +23,12 @@ export default function CtaBand() {
             href="#volunteer"
             variant="solid"
             className="bg-white text-orange-600 hover:bg-orange-50 rounded-4xl w-full sm:w-auto"
-          >
+            >
+          <Link href={"/contact"}>
             <p className="text-base sm:text-lg md:text-xl font-semibold">
               Volunteer Today
             </p>
+            </Link>
           </CtaButton>
         </div>
       </div>

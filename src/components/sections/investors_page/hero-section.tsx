@@ -105,7 +105,7 @@ export default function HeroSection() {
           >
             <div className="flex flex-nowrap items-center justify-start gap-0 sm:gap-4 w-full whitespace-nowrap leading-none text-[clamp(0.95rem,3vw,1rem)] md:text-[clamp(0.85rem,2vw,1.4rem)]">
               {/* Label */}
-              <span className="font-semibold text-[#273F4F]">Join Now :</span>
+              <span className="font-semibold text-[#273F4F] text-xs sm:text-md">Join Now: </span>
 
               {/* Links */}
               {/* <a
@@ -114,11 +114,11 @@ export default function HeroSection() {
               >
                 International
               </a> */}
-              <span className="text-orange-600">|</span>
-              <a href="/freelancer" className="text-orange-600 font-medium">
+              {/* <span className="text-orange-600">|</span> */}
+              <a href="/freelancer" className="text-orange-600 font-medium text-xs sm:text-md">
                 Post Graduate Certificate in Applied Profession
               </a>
-              <span className="text-orange-600">|</span>
+              {/* <span className="text-orange-600">|</span> */}
               {/* <a href="/program" className="text-orange-600 font-medium">
                 SPP
               </a> */}

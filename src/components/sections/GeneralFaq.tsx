@@ -25,12 +25,12 @@ export const GeneralFaq: React.FC<GeneralFaqProps> = ({ items }) => {
           priority
         />
 
-        <div className="w-full flex flex-col justify-start items-start gap-4">
-          <h2 className="leading-[150%] font-inter text-[1.25rem] font-semibold">
+        {/* <div className="w-full flex flex-col justify-start items-start gap-4"> */}
+          {/* <h2 className="leading-[150%] font-inter text-[1.25rem] font-semibold">
             You can ask anything you want to know Feedback
-          </h2>
+          </h2> */}
 
-          <form
+          {/* <form
             onSubmit={(e) => e.preventDefault()}
             className="flex flex-col justify-start items-start gap-[5px][ w-full"
           >
@@ -45,8 +45,8 @@ export const GeneralFaq: React.FC<GeneralFaqProps> = ({ items }) => {
               name=""
               id=""
             />
-          </form>
-        </div>
+          </form> */}
+        {/* </div> */}
       </div>
       <div className="lg:hidden block">
         <Accordion items={items} />

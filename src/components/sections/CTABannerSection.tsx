@@ -76,17 +76,17 @@ export const CTABannerSection = () => {
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
-    Join SPP
+    Join PGCAP
   </MotionButton>
 
   {/* Talk to a Career Advisor Button */}
-  <MotionButton
+  {/* <MotionButton
     className="px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 bg-[#FE7642] text-white border-2 border-white rounded-full font-semibold text-xs sm:text-sm lg:text-lg hover:bg-[#e65a2e] transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 whitespace-nowrap"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
     Talk to a Career Advisor
-  </MotionButton>
+  </MotionButton> */}
 </MotionDiv>
 
       </div>

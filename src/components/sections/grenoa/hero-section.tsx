@@ -78,8 +78,8 @@ export default function HeroSection() {
           </div>
         </div>
       </div> */}
-      <div className="container mx-auto px-4 py-8 lg:py-16">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="container mx-auto px-4 py-16 lg:py-16">
+        <div className="grid lg:grid-cols-2 gap-20 lg:gap-12 items-center">
           {/* Image Section - appears first on mobile, second on desktop */}
           <MotionDiv
             initial={{ opacity: 0, x: 40, scale: 0.98 }}
@@ -98,7 +98,7 @@ export default function HeroSection() {
                 alt="AI Brain Innovation - 3D illustration of a brain connected to circuit boards representing AI-driven technology"
                 width={1500}
                 height={1500}
-                className="w-full h-auto hidden lg:block object-contain scale-230 lg:absolute right-[150px] -top-[150px]"
+                className="w-full h-auto hidden lg:block object-contain scale-230 lg:absolute right-[150px] -top-[150px] z-0 pointer-events-none"
                 priority
               />
               <Image
@@ -179,7 +179,7 @@ export default function HeroSection() {
               variants={container}
               className="flex gap-2 justify-center lg:justify-start"
             >
-              <MotionDiv
+              {/* <MotionDiv
                 variants={item}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
@@ -190,8 +190,8 @@ export default function HeroSection() {
                 >
                   Discover More
                 </Button>
-              </MotionDiv>
-              <MotionDiv
+              </MotionDiv> */}
+              {/* <MotionDiv
                 variants={item}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
@@ -203,7 +203,7 @@ export default function HeroSection() {
                 >
                   Get Started
                 </Button>
-              </MotionDiv>
+              </MotionDiv> */}
             </MotionDiv>
           </MotionDiv>
         </div>

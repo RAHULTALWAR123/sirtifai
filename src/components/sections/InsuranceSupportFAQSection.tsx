@@ -13,7 +13,7 @@ export const InsuranceSupportFAQSection = () => {
   return (
     <div className="flex flex-col lg:flex-row">
       <MotionDiv
-        className="w-full lg:w-1/2 bg-white flex items-start py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12"
+        className="w-full lg:w-1/2 bg-white flex items-center py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -39,7 +39,7 @@ export const InsuranceSupportFAQSection = () => {
             Our dedicated insurance support team is here to help you with any questions or concerns about your coverage.
           </MotionP>
 
-          <div className="space-y-6">
+          <div className="space-y-20">
             {[
               {
                 icon: Mail,
@@ -48,17 +48,17 @@ export const InsuranceSupportFAQSection = () => {
                 action: "insurance@sirtifai.com",
                 isLink: true,
               },
-              {
-                icon: MessageCircle,
-                title: "Live Chat",
-                subtitle: "Available Monday-Friday, 9am-6pm IST",
-                action: "Start Chat",
-                isButton: true,
-              },
+              // {
+              //   icon: MessageCircle,
+              //   title: "Live Chat",
+              //   subtitle: "Available Monday-Friday, 9am-6pm IST",
+              //   action: "Start Chat",
+              //   isButton: true,
+              // },
             ].map((contact, index) => (
               <MotionDiv
                 key={index}
-                className="flex items-start gap-4"
+                className="flex items-center justify-center gap-4"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

@@ -18,7 +18,7 @@ export default function FeaturedLearnerStories() {
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {/* Video Testimonial Card */}
           <Card className="bg-white p-6 rounded-2xl shadow-sm">
-            <div className="relative mb-6">
+            {/* <div className="relative mb-6">
               <img
                 src="/assets/laptop-woman.jpg"
                 alt="Video testimonial"
@@ -29,7 +29,7 @@ export default function FeaturedLearnerStories() {
                   <Play className="w-6 h-6 text-white fill-white" />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="space-y-4">
               <span className="text-[#ff7847] text-sm font-medium">Video Testimonial</span>

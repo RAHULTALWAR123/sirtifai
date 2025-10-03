@@ -94,17 +94,17 @@ export const AboutUsPage = () => {
             >
               <div className="flex flex-nowrap items-center justify-start gap-2 sm:gap-4 w-full whitespace-nowrap leading-none text-[clamp(0.95rem,3vw,1rem)] md:text-[clamp(0.85rem,2vw,1.4rem)]">
                 {/* Label */}
-                <span className="font-semibold text-orange-600">Join Now :</span>
+                <span className="font-semibold text-orange-600 text-xs sm:text-md">Join Now :</span>
 
                 {/* Links */}
                 {/* <a href="/sirtifai-international" className="text-orange-600 font-medium">
                   International
                 </a> */}
-                <span className="text-orange-600">|</span>
-                <a href="/freelancer" className="text-orange-600 font-medium">
+                {/* <span className="text-orange-600">|</span> */}
+                <a href="/freelancer" className="text-orange-600 font-medium text-xs sm:text-md">
                   Post Graduation Certificate in Applied Profession
                 </a>
-                <span className="text-orange-600">|</span>
+                {/* <span className="text-orange-600">|</span> */}
                 {/* <a href="/program" className="text-orange-600 font-medium">
                   SPP Student
                 </a> */}

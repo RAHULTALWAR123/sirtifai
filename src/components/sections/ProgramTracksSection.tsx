@@ -62,113 +62,112 @@ export const ProgramTracksSection = () => {
         {/* Program Tracks Grid */}
         <div className="gap-8 justify-items-end place-items-end">
           {PROGRAM_TRACKS.map((track, index) => {
-            const IconComponent = track.icon;
-            const isHighlighted = track.variant === 'highlighted';
-            
-            return (
-              <MotionDiv
-                key={track.id}
-                className={`rounded-2xl w-full ${index % 2 === 0 ? 'h-[408px]' : 'h-[570px]'} p-8 transition-all duration-300 hover:scale-105 ${
-                  isHighlighted
-                    ? 'order-1 md:order-none bg-orange-500 text-white shadow-2xl'
-                    : 'order-2 md:order-none bg-white text-gray-900 shadow-lg hover:shadow-xl'
+  const IconComponent = track.icon;
+  const isHighlighted = track.variant === "highlighted";
+
+  return (
+    <MotionDiv
+      key={track.id}
+      className={`
+        rounded-2xl w-full p-6 sm:p-8 transition-all duration-300 hover:scale-105 
+        flex flex-col items-center
+        ${
+          isHighlighted
+            ? "order-1 md:order-none bg-orange-500 text-white shadow-2xl"
+            : "order-2 md:order-none bg-white text-gray-900 shadow-lg hover:shadow-xl"
+        }
+      `}
+      initial={{ opacity: 0, y: 50, scale: 0.9 }}
+      animate={
+        isInView
+          ? { opacity: 1, y: 0, scale: 1 }
+          : { opacity: 0, y: 50, scale: 0.9 }
+      }
+      transition={{ duration: 0.8, delay: 0.6 + index * 0.2 }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.98 }}
+    >
+      {/* Title */}
+      <MotionH4
+        className="text-xl sm:text-2xl font-bold mb-3 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.6, delay: 0.8 + index * 0.2 }}
+      >
+        {track.title}
+      </MotionH4>
+
+      {/* Subtitle */}
+      <MotionP
+        className={`text-center mb-6 sm:mb-8 text-sm sm:text-base ${
+          isHighlighted ? "text-white/80" : "text-gray-600"
+        }`}
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.6, delay: 1.0 + index * 0.2 }}
+      >
+        {track.subtitle}
+      </MotionP>
+
+      {/* Features Container */}
+      <div
+        className={`w-full sm:w-3/4 lg:w-2/3 mx-auto flex flex-col justify-center items-center sm:items-center p-4 sm:p-6 rounded-xl gap-4 sm:gap-6 text-gray-900 ${
+          isHighlighted ? "bg-white" : "bg-[#F9FAFB]"
+        }`}
+      >
+        <div className="space-y-2 sm:space-y-3 w-full">
+          {track.features?.map((feature, featureIndex) => (
+            <MotionDiv
+              key={featureIndex}
+              className="flex items-center gap-2 sm:gap-3"
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+              transition={{
+                duration: 0.5,
+                delay: 1.2 + index * 0.2 + featureIndex * 0.1,
+              }}
+            >
+              <BsCheckCircleFill
+                className="flex-shrink-0 mt-0.5 text-orange-500"
+                size={16}
+              />
+              <span
+                className={`text-xs sm:text-sm leading-snug sm:leading-normal ${
+                  isHighlighted ? "" : "text-gray-700"
                 }`}
-                initial={{ opacity: 0, y: 50, scale: 0.9 }}
-                animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 50, scale: 0.9 }}
-                transition={{ duration: 0.8, delay: 0.6 + index * 0.2 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
               >
-                {/* Icon */}
-                
-                {/* <div className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center ${
-                  isHighlighted ? 'bg-white/20' : 'bg-gray-100'
-                }`}>
-                  <IconComponent 
-                    size={32} 
-                    className={isHighlighted ? 'text-white' : 'text-gray-600'} 
-                  />
-                </div> */}
+                {feature}
+              </span>
+            </MotionDiv>
+          ))}
+        </div>
 
-                {/* Title */}
-                <MotionH4 
-                  className="text-2xl font-bold mb-3 text-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.6, delay: 0.8 + index * 0.2 }}
-                >
-                  {track.title}
-                </MotionH4>
+        {/* Button */}
+        <MotionDiv
+          className="text-center w-full"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 1.4 + index * 0.2 }}
+        >
+          <a href={track.href}>
+            <Button
+              variant={isHighlighted ? "primary" : "outline"}
+              size="md"
+              className={`w-full sm:w-60 h-[50px] sm:h-[60px] cursor-pointer ${
+                isHighlighted
+                  ? "bg-orange-50 text-orange-500 hover:bg-gray-50 border-white"
+                  : "border-orange-500 text-orange-500 hover:bg-white"
+              }`}
+            >
+              {track.buttonText}
+            </Button>
+          </a>
+        </MotionDiv>
+      </div>
+    </MotionDiv>
+  );
+})}
 
-                {/* Subtitle */}
-                <MotionP 
-                  className={`text-center mb-8 ${
-                    isHighlighted ? 'text-white/80' : 'text-gray-600'
-                  }`}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.6, delay: 1.0 + index * 0.2 }}
-                >
-                  {track.subtitle}
-                </MotionP>
-
-                <div className={`w-1/2 mx-auto flex flex-col justify-center items-center p-6 rounded-xl gap-6 text-gray-900 ${
-                  isHighlighted
-                    ? ' bg-white'
-                    : 'bg-[#F9FAFB]'
-                }`}>
-                {/* Features */}
-                <div className="sm:space-y-4 mb-4">
-                  {track.features?.map((feature, featureIndex) => (
-                    <MotionDiv 
-                      key={featureIndex} 
-                      className="flex items-start gap-3"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                      transition={{ duration: 0.5, delay: 1.2 + index * 0.2 + featureIndex * 0.1 }}
-                    >
-                      <BsCheckCircleFill 
-                        size={20} 
-                        className={`flex-shrink-0 mt-0.5 text-orange-500`} 
-                      />
-                      <span className={`text-sm ${
-                        isHighlighted ? '' : 'text-gray-700'
-                      }`}>
-                        {feature}
-                      </span>
-                    </MotionDiv>
-                  ))}
-                </div>
-
-                {/* Button */}
-                <MotionDiv 
-                  className="text-center w-60"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.6, delay: 1.4 + index * 0.2 }}
-                >
-                  <a href={track.href} >
-                  <Button
-                    variant={isHighlighted ? 'primary' : 'outline'}
-                    size="md"
-                    className={`w-full h-[60px] cursor-pointer ${
-                      isHighlighted 
-                        ? 'bg-orange-50 text-orange-500 hover:bg-gray-50 border-white' 
-                        : 'border-orange-500 text-orange-500 hover:bg-white'
-                    }`}
-
-                  >
-                    {track.buttonText}
-                  </Button>
-                  </a>
-                  
-                </MotionDiv>
-
-
-                </div>
-              </MotionDiv>
-            );
-          })}
         </div>
       </div>
     </section>

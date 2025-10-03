@@ -42,7 +42,7 @@ export default function UpcomingWebinars() {
                 </div>
               </div>
 
-              <Button className="w-full bg-[#ff7847] hover:bg-[#e56a3f] text-white">Register Free</Button>
+              {/* <Button className="w-full bg-[#ff7847] hover:bg-[#e56a3f] text-white">Register Free</Button> */}
             </div>
           </Card>
 
@@ -72,7 +72,7 @@ export default function UpcomingWebinars() {
                 </div>
               </div>
 
-              <Button className="w-full bg-[#ff7847] hover:bg-[#e56a3f] text-white">Join Event</Button>
+              {/* <Button className="w-full bg-[#ff7847] hover:bg-[#e56a3f] text-white">Join Event</Button> */}
             </div>
           </Card>
 
@@ -102,20 +102,20 @@ export default function UpcomingWebinars() {
                 </div>
               </div>
 
-              <Button className="w-full bg-[#ff7847] hover:bg-[#e56a3f] text-white">Reserve Spot</Button>
+              {/* <Button className="w-full bg-[#ff7847] hover:bg-[#e56a3f] text-white">Reserve Spot</Button> */}
             </div>
           </Card>
         </div>
 
         {/* Bottom Navigation */}
-        <div className="flex items-center justify-center gap-4">
+        {/* <div className="flex items-center justify-center gap-4">
           <Button className="bg-[#ff7847] hover:bg-[#e56a3f] text-white px-8 py-3 rounded-full">
             Register for Next Webinar
           </Button>
           <Button variant="outline" size="icon" className="rounded-full border-gray-300 bg-transparent">
             <ArrowRight className="w-4 h-4" />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

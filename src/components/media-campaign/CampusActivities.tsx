@@ -67,9 +67,9 @@ export default function CampusActivities() {
               </div>
             </div>
 
-            <Button className="w-full bg-[#ff7847] hover:bg-[#e56a3f] text-white px-8 py-3 rounded-sm">
+            {/* <Button className="w-full bg-[#ff7847] hover:bg-[#e56a3f] text-white px-8 py-3 rounded-sm">
              Invite Sirtifai to Your Campus
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

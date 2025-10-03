@@ -1,6 +1,7 @@
 "use client"
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 // Strongly typed motion components to fix TypeScript errors
 const MotionSection = motion.section as React.ComponentType<any>
@@ -46,29 +47,31 @@ export const InsuranceCTASection = () => {
           </MotionP>
 
           <MotionDiv
-            className="flex flex-row gap-3 xs:gap-5 w-full sm:justify-center sm:items-center"
+            className="flex flex-row w-full sm:justify-center sm:items-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <MotionButton
+            {/* <MotionButton
               className="w-full xs:w-auto px-4 xs:px-6 sm:px-8 py-2.5 xs:py-3.5 sm:py-4 bg-white text-[#FE7642] rounded-full text-base xs:text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2 xs:gap-3 cursor-pointer"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               Take Career Quiz
-            </MotionButton>
+            </MotionButton> */}
+            <Link href={"/freelance"}>
             <MotionButton
               className="w-full xs:w-auto px-4 xs:px-6 sm:px-8 py-2.5 xs:py-3.5 sm:py-4 bg-[#FE7642] text-white border-2 border-white rounded-full text-base xs:text-lg font-semibold hover:bg-white hover:text-[#FE7642] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2 xs:gap-3 cursor-pointer"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              Join SPP Now
+              >
+              Join PGCAP Now
               <ArrowRight className="w-5 h-5" />
             </MotionButton>
+              </Link>
           </MotionDiv>
         </div>
       </MotionDiv>
