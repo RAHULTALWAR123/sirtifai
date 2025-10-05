@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 // import { CheckIcon } from "../../../../components/icons" // Assuming CheckIcon is imported from a different file

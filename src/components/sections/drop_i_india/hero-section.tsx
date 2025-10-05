@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { CtaButton } from "../../common/cta-button";
 import { motion, useInView } from "framer-motion";
 import type { MotionProps } from "framer-motion";
 import { useRef, useState } from "react";

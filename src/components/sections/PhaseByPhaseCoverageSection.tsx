@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { GraduationCap, Monitor, TrendingUp } from "lucide-react"
 import { motion } from "framer-motion"

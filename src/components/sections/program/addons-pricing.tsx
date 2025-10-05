@@ -29,7 +29,7 @@ const AddOnsPricing = () => {
             <div>
               <h4 className="text-[#1F2937] text-base font-[600] font-inter">Payroll + EPF/ESI</h4>
               <p className="text-[#4B5563] text-sm font-inter">
-                Full compliance with India's PF/ESI structure verified salary slips
+                Full compliance with Indias PF/ESI structure verified salary slips
               </p>
             </div>
 

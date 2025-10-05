@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -134,7 +136,7 @@ export default function TeamMemberCarousel() {
           animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          "Leaders, Innovators, Mentors – All in One Team"
+          &quot;Leaders, Innovators, Mentors – All in One Team&quot;
         </MotionH3>
         <MotionP
           className="text-gray-600 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed"

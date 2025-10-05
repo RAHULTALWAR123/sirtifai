@@ -6,7 +6,7 @@ import { AboutSection } from "../components/sections/AboutSection"
 import { ProgramTracksSection } from "../components/sections/ProgramTracksSection"
 import { SuccessStoriesSection } from "../components/sections/SuccessStoriesSection"
 import { CertificationsSection } from "../components/sections/CertificationsSection"
-import { PartnersSection } from "../components/sections/PartnersSection"
+
 import { PartnersRecognitionSection } from "../components/sections/PartnersRecognitionSection"
 import { ImpactNumbersSection } from "../components/sections/ImpactNumbersSection"
 

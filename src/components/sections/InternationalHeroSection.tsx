@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
-import { Download, Star } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 export const InternationalHeroSection = () => {
   return (
@@ -91,7 +92,7 @@ export const InternationalHeroSection = () => {
                 }}
               />
               {/* Fallback if image fails to load */}
-              <div className="hidden w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+              <div className=" w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gray-400 rounded-full mx-auto mb-4"></div>
                   <p className="text-gray-600">International Career Image</p>
@@ -103,7 +104,7 @@ export const InternationalHeroSection = () => {
     <div className="self-stretch justify-start text-gray-600 text-base font-normal font-['Inter'] leading-normal pt-16">A comprehensive roadmap to international opportunities with complete visa support and placement assistance.</div>
     <div className="flex flex-col justify-center items-start gap-4">
         <div className="px-[5px] py-[3px] bg-slate-700 rounded-[114px] flex flex-col justify-start items-start gap-2.5">
-            <div className="px-2.5 py-2.5 rounded-[114px] outline outline-1 outline-offset-[-1px] outline-gray-400 inline-flex justify-center items-center gap-2.5">
+            <div className="px-2.5 py-2.5 rounded-[114px]  outline-1 outline-offset-[-1px] outline-gray-400 inline-flex justify-center items-center gap-2.5">
                 <div className="justify-start text-white text-xs font-semibold font-['Open_Sans'] capitalize leading-3 tracking-wide">Start Your Golbal Carrier</div>
             </div>
         </div>
@@ -130,7 +131,7 @@ export const InternationalHeroSection = () => {
                 }}
               />
               {/* Fallback if image fails to load */}
-              <div className="hidden w-full h-32 bg-gray-200 rounded-lg flex items-center justify-center border-4 border-white">
+              <div className=" w-full h-32 bg-gray-200 rounded-lg flex items-center justify-center border-4 border-white">
                 <div className="text-center">
                   <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
                   <p className="text-gray-600 text-sm">Global Opportunities</p>

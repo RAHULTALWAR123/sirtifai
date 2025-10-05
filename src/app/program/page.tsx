@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { useState } from "react"
@@ -8,7 +9,6 @@ import Hero from "../../components/sections/program/hero"
 import About from "../../components/sections/program/about"
 import Benefits from "../../components/sections/program/benefits"
 import Features from "../../components/sections/program/features"
-import AddOnsPricing from "../../components/sections/program/addons-pricing"
 import WhoCanUse from "../../components/sections/program/who-can-use"
 import FAQ from "../../components/sections/program/faq"
 import ProgramSelection from "../../components/sections/program/program-selection"

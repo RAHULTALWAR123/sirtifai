@@ -1,6 +1,6 @@
 'use client';
 
-import { Phone, ArrowRight } from 'lucide-react';
+import {  ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SPP_OPTIONS } from '../../constants/data';
 import React from 'react';

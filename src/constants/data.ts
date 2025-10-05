@@ -1,10 +1,10 @@
 import {
   Handshake,
-  Settings,
+  
   BarChart3,
-  Globe,
+
   Share2,
-  GraduationCap,
+
 } from "lucide-react";
 import type {
   User,

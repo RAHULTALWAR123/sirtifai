@@ -52,7 +52,7 @@ function CancellationPolicy() {
             <li>The program is discontinued.</li>
             <li>Minimum enrollment requirements are not met.</li>
             <li>
-              The learner violates Sirtifai's Code of Conduct or Terms &
+              The learner violates Sirtifai&lsquo;s Code of Conduct or Terms &
               Conditions.
             </li>
             <li>

@@ -4,8 +4,6 @@ import { Footer } from "../../components/layout/Footer";
 import CtaBand from "@/components/sections/drop_i_india/cta-band";
 import HeroSection from "@/components/sections/drop_i_india/hero-section";
 import ImpactActions from "@/components/sections/drop_i_india/impact-actions";
-import NewsletterCard from "@/components/sections/drop_i_india/newsletter-card";
-import QuoteHighlight from "@/components/sections/drop_i_india/quote-highlight";
 import VisionMissionSection from "@/components/sections/drop_i_india/vision-mission";
 
 export default function ContactPage() {

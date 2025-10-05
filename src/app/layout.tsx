@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
+import { GoogleOAuthProvider } from '@react-oauth/google';
 // import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
@@ -24,10 +25,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const googleClientId = process.env.GOOGLE_CLIENT_ID || '';
   return (
     <html lang="en">
       <body className={GeistSans.className}>
-        {children}
+        <GoogleOAuthProvider clientId={googleClientId}>
+          {children}
+        </GoogleOAuthProvider>
       </body>
     </html>
   )

@@ -3,7 +3,6 @@ import { Footer } from "../../components/layout/Footer";
 // import { ContactSupportSection } from "../../components/sections/ContactSupportSection";
 // import CtaBand from "@/components/sections/investors_page/cta-band";
 import HeroSection from "@/components/sections/investors_page/hero-section";
-import PrimeInvestor from "@/components/sections/investors_page/prime-investors";
 import JobTech from "@/components/sections/investors_page/jobtech";
 
 // import VisionMissionSection from "@/components/sections/drop_i_india/vision-mission";

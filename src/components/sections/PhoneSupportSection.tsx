@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { Check, Phone, MessageCircle, BarChart3, ImageIcon } from "lucide-react"
 import { motion, useInView } from "framer-motion"

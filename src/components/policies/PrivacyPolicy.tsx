@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 function PrivacyPolicy() {
   return (
     <div className="space-y-6">

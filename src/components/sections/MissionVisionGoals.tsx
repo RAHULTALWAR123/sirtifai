@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
 export default function MissionVisionGoals() {
@@ -19,7 +20,7 @@ export default function MissionVisionGoals() {
             <div className="person-info">
               <h3>James Canon</h3>
               <p className="role">React Developer</p>
-              <p className="company">"Worked at Microsoft"</p>
+              <p className="company">&quot;Worked at Microsoft&quot;</p>
             </div>
           </div>
 
@@ -40,7 +41,7 @@ export default function MissionVisionGoals() {
             <div className="person-info-right">
               <h3>Stacy Larin</h3>
               <p className="role">UI/UX Designer</p>
-              <p className="company">"Worked at Target"</p>
+              <p className="company">&quot;Worked at Target&quot;</p>
             </div>
           </div>
         </div>

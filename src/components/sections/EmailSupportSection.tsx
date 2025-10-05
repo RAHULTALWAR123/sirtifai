@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { Check, Mail, MessageCircle, BarChart3, ImageIcon } from "lucide-react"
 import { Button } from "../ui/Button"

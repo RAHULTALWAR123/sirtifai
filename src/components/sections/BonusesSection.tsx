@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type React from "react";
 
 interface Bonus {

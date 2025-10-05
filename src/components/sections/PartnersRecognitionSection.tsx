@@ -1,7 +1,5 @@
 'use client';
 
-import { CERTIFICATIONS } from '../../constants/data';
-import { ACADEMIC_PARTNERS } from '../../constants/data';
 import { MEMBERSHIP_RECOGNITION } from '../../constants/data';
 import { motion, useInView } from 'framer-motion';
 import React, { useRef } from 'react';

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { BarChart3 } from "lucide-react"
@@ -121,7 +122,7 @@ export const CertificationsHeroSection = () => {
 
               {/* Fallback if image fails to load */}
               <MotionDiv
-                className="hidden w-full h-full bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl flex items-center justify-center"
+                className=" w-full h-full bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl flex items-center justify-center"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={heroInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.8, delay: 0.5 }}

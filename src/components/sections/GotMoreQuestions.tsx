@@ -1,4 +1,4 @@
-import { IoIosArrowForward } from "react-icons/io"
+
 
 export const GotMoreQuestions = () => {
     return (

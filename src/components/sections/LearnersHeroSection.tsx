@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { CalendarCheck } from "lucide-react"
 import { motion, useInView } from "framer-motion"
@@ -242,7 +245,7 @@ export const LearnersHeroSection = () => {
           </MotionDiv>
 
           <MotionDiv
-            className="block sm:hidden w-[350px] h-[370px] flex items-center justify-center"
+            className=" sm:hidden w-[350px] h-[370px] flex items-center justify-center"
             initial={{ opacity: 0, scale: 0.8, y: 50 }}
             animate={rightInView ? { opacity: 1, scale: 1, y: 0 } : { opacity: 0, scale: 0.8, y: 50 }}
             transition={{ duration: 0.8, delay: 0.4 }}

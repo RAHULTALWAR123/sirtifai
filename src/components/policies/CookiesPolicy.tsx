@@ -7,7 +7,7 @@ function CookiesPolicy() {
         <p>Effective Date: [Insert Date]</p>
         <p>
           This Cookies Policy explains how Sirtifai EdTech Pvt. Ltd. (India)
-          and Sirtifai Inc. (USA) ("Sirtifai","we""our",,"us") use cookies and
+          and Sirtifai Inc. (USA) (&quot;Sirtifai&quot;,&quot;we&quot;&quot;our&quot;,,&quot;us&quot;) use cookies and
           similar technologies to recognize you when you visit our websites,
           platforms, and learning management systems (LMS).
         </p>

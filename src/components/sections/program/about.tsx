@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const About = () => {
   return (
     <section className="min-h-screen w-full flex flex-col justify-center items-center space-y-4 sm:space-y-6 max-w-7xl mx-auto px-4">

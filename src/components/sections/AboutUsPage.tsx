@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
-import { Button } from "../ui/Button"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
@@ -81,7 +81,7 @@ export const AboutUsPage = () => {
               animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              India's first Job-First Education Ecosystem, building skilled professionals with real work experience and
+              India&apos;s first Job-First Education Ecosystem, building skilled professionals with real work experience and
               lifetime career support.
             </MotionP>
 

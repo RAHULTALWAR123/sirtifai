@@ -5,7 +5,7 @@ import {
   FaComments, 
   FaBook, 
   FaChartLine,
-  FaMedal 
+  
 } from 'react-icons/fa';
 
 

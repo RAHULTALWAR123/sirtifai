@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "../ui/Button"
 import { ArrowRight } from "lucide-react"
 

@@ -5,7 +5,6 @@ import {
   FaCertificate,
   FaFileAlt,
   FaProjectDiagram,
-  FaMoneyBillWave,
   FaComments,
   FaLanguage,
   FaGlobeAmericas,

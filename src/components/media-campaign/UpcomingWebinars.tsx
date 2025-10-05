@@ -1,6 +1,7 @@
-import { Button } from "../ui/Button"
+/* eslint-disable @next/next/no-img-element */
+// import { Button } from "../ui/Button"
 import { Card } from "../ui/Card"
-import { Calendar, Clock, Users, ArrowRight } from "lucide-react"
+import { Calendar, Clock, Users } from "lucide-react"
 
 export default function UpcomingWebinars() {
   return (

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Check, FileText, Euro, Building } from 'lucide-react';
 
 interface VisaService {
@@ -215,7 +216,7 @@ export const ComprehensiveVisaSupport = () => {
 
       key={country.id}
 
-      className="w-24 px-4 py-3 bg-white rounded-lg shadow-[0px_1px_2px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-1"
+      className="w-24 px-4 py-3 bg-white rounded-lg shadow-[0px_1px_2px_rgba(0,0,0,0.05)]  outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-1"
 
     >
 

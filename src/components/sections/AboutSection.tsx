@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { STEPS } from "../../constants/data";
 import { motion, useInView } from 'framer-motion';

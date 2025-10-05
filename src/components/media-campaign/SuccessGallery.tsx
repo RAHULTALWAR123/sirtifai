@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "../ui/Button"
-import { ArrowBigRight, ArrowRight } from "lucide-react"
+import {  ArrowRight } from "lucide-react"
 
 export default function SuccessGallery() {
   return (

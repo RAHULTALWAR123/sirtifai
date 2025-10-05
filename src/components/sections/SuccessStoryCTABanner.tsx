@@ -1,4 +1,5 @@
-import { Target } from 'lucide-react';
+/* eslint-disable @next/next/no-img-element */
+// import { Target } from 'lucide-react';
 
 export const SuccessStoryCTABanner = () => {
   return (

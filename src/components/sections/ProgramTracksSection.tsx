@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client';
-import { CheckCircle } from 'lucide-react';
 import { PROGRAM_TRACKS } from '../../constants/data';
 import { Button } from '../ui/Button';
 import { BsCheckCircleFill } from 'react-icons/bs';

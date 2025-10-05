@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { CtaButton } from "../../common/cta-button";
 import { motion, useInView } from "framer-motion";
@@ -76,7 +78,7 @@ export default function JobTech() {
             About Sirtifai
           </p>
           <h2 className="text-2xl sm:text-3xl font-light md:text-4xl lg:text-5xl mb-2 sm:mb-4">
-            Sirtifai Is World's First
+            Sirtifai Is World&apos;s First
           </h2>
           <h3 className="text-xl sm:text-2xl font-bold text-[#2E2E2E] md:text-3xl lg:text-4xl">
             <span className="">EdTech</span> • <span className="">JobTech</span>{" "}

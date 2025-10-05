@@ -1,4 +1,5 @@
-import { Button } from "../ui/Button"
+/* eslint-disable @next/next/no-img-element */
+// import { Button } from "../ui/Button"
 import { CheckCircle } from "lucide-react"
 
 export default function CampusActivities() {

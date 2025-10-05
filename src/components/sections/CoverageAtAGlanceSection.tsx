@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { Shield, Users, HeartPulse, Globe, FileCheck, Truck } from "lucide-react"
 import { motion } from "framer-motion"

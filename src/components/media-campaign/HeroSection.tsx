@@ -1,6 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import { Play, ArrowRight, Calendar, Menu, ChevronDown } from 'lucide-react';
-import { Button } from '../ui/Button';
 
 
 

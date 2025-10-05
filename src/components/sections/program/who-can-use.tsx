@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const WhoCanUse = () => {
   return (
     <section className="min-h-screen w-screen bg-[#FEF7F1] mt-4 md:mt-16">

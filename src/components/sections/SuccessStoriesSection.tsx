@@ -74,7 +74,7 @@ export const SuccessStoriesSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Join <span className='font-bold text-orange-500'>50,000+</span> professionals who transformed their careers with SPP's 
+            Join <span className='font-bold text-orange-500'>50,000+</span> professionals who transformed their careers with SPP&apos;s 
             <br />
             <span className='text-gray-600 font-bold mx-1'>
             Learn • Work • Earn • Rise   

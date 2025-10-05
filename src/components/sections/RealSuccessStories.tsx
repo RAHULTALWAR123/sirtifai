@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 interface SuccessStory {
@@ -77,7 +78,7 @@ export const RealSuccessStories = () => {
                 />
 
                 {/* Fallback if image fails to load */}
-                <div className="hidden w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                <div className=" w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gray-500 rounded-full mx-auto mb-2"></div>
                     <p className="text-gray-600 text-sm">Success Story</p>

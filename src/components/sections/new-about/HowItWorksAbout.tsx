@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 // src/components/HowItWorksAbout.tsx
-import Image from "next/image";
+
 import React from "react";
 
 const HowItWorksAbout = () => {

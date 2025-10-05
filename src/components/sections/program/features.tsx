@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Features = () => {
   return (
     <section className="md:min-h-[450px] w-full flex flex-col items-center justify-center pb-4 md:pb-0">

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { MessageCircle, ImageIcon, HeadphonesIcon } from "lucide-react"
 import Image from "next/image"

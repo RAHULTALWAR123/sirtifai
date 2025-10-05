@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type React from "react";
 import { FaShieldAlt, FaWallet } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";

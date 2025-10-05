@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { CtaButton } from "../../common/cta-button";
-import { Button } from "@/components/ui/Button";
 import { motion, MotionProps } from "framer-motion";
 
 type DivMotionComponentProps = React.HTMLAttributes<HTMLDivElement> &

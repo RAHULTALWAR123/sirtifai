@@ -5,7 +5,7 @@ import { WhoCanJoinSection } from "../../components/sections/WhoCanJoinSection"
 import { ToolsSection } from "../../components/sections/ToolsSection"
 import { PortfolioCertificationSection } from "../../components/sections/PortfolioCertificationSection"
 import { LearningJourneySection } from "../../components/sections/LearningJourneySection"
-import { TestimonialsSection } from "../../components/sections/TestimonialsSection"
+
 import { CTABannerSection } from "../../components/sections/CTABannerSection"
 import { SuccessStoriesSection } from "../../components/sections/SuccessStoriesSection"
 

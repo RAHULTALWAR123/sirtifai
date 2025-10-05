@@ -1,7 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client';
 
-import { RotatingGlobe } from '../ui/RotatingGlobe';
-import { ACADEMIC_PARTNERS } from '../../constants/data';
 import { motion, useInView } from 'framer-motion';
 import React, { useRef } from 'react';
 

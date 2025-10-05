@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Facebook, Twitter, Youtube, Mail, Phone, HelpCircle, MessageCircle, Instagram } from "lucide-react";
+import { Facebook, Youtube, Mail, HelpCircle, MessageCircle, Instagram } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 

@@ -1,6 +1,6 @@
 import { Button } from "../ui/Button"
 import { Card } from "../ui/Card"
-import { Play, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export default function FeaturedLearnerStories() {
   return (
@@ -96,12 +96,12 @@ export default function FeaturedLearnerStories() {
               <h3 className="text-xl font-bold text-gray-900">From College to Global Career</h3>
 
               <p className="text-gray-600">
-                How Amit leveraged Sirtifai's international track to land a remote position with a US tech company.
+                How Amit leveraged Sirtifai&apos;s international track to land a remote position with a US tech company.
               </p>
 
               <blockquote className="text-gray-700 italic border-l-4 border-[#ff7847] pl-4">
-                "The structured learning path and practical projects gave me real-world experience that my college never
-                provided. The mentorship was invaluable."
+                &quot;The structured learning path and practical projects gave me real-world experience that my college never
+                provided. The mentorship was invaluable.&quot;
               </blockquote>
 
               <div className="space-y-3">

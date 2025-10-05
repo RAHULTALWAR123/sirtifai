@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { Clock, CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"

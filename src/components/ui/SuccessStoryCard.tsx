@@ -1,4 +1,5 @@
-import { Play } from 'lucide-react';
+/* eslint-disable @next/next/no-img-element */
+// import { Play } from 'lucide-react';
 import type { SuccessStory } from '../../types';
 import { FaPlay } from 'react-icons/fa';
 
@@ -36,7 +37,7 @@ export const SuccessStoryCard = ({ story }: SuccessStoryCardProps) => {
       <div className="px-4">
         <h4 className="text-xl font-bold text-gray-900">{story.name}</h4>
         <p className="text-gray-600 text-sm leading-relaxed italic">
-          "{story.quote}"
+          &quot;{story.quote}&quot;
         </p>
         <p className="text-gray-500 text-xs font-medium">
           {story.designation}

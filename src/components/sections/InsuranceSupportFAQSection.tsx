@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
-import { Mail, MessageCircle, ArrowRight } from "lucide-react"
+import { Mail,ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
 
 // Strongly typed motion components to fix TypeScript errors

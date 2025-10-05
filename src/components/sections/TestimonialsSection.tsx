@@ -62,7 +62,7 @@ export const TestimonialsSection = () => {
 
               {/* Quote */}
               <blockquote className="text-gray-700 leading-relaxed mb-6 italic">
-                "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
               </blockquote>
 
               {/* Star Rating and Program */}
